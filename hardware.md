@@ -22,6 +22,14 @@ Seeed Studios have very kindly made all the hardware available as easy to purcha
 
 [![The Wio Terminal hardware kit](./images/wio-hardware-kit.png)](https://www.seeedstudio.com/IoT-for-beginners-with-Seeed-and-Microsoft-Wio-Terminal-Starter-Kit-p-5006.html)
 
+In addition to the above options, we are pleased to bring you Seeed Studio's brand new product for 2022, the SenseCAP K1100.
+
+**[SenseCAP K1100 - The Sensor Prototype Kit with LoRa® and AI](https://www.seeedstudio.com/Seeed-Studio-LoRaWAN-Dev-Kit-p-5370.html)**
+
+[![The SenseCAP K1100 kit](./images/sensecap-k1100-kit.jpeg)](https://www.seeedstudio.com/Seeed-Studio-LoRaWAN-Dev-Kit-p-5370.html)
+
+SenseCAP K1100 comes with all the essential sensors and devices, including a Wio Terminal, an AI Vision Sensor, and a LoRa®-enabled module - that together allows users of all backgrounds and levels to create DIY sensors for data collection and solving real-world challenges.
+
 ### Raspberry Pi
 
 **[IoT for beginners with Seeed and Microsoft - Raspberry Pi 4 Starter Kit](https://www.seeedstudio.com/IoT-for-beginners-with-Seeed-and-Microsoft-Raspberry-Pi-Starter-Kit-p-5004.html)**
@@ -47,6 +55,13 @@ These are specific to using the Wio terminal Arduino device, and are not relevan
 * Headphones or other speaker with a 3.5mm jack, or a JST speaker such as:
   * [Mono Enclosed Speaker - 2W 6 Ohm](https://www.seeedstudio.com/Mono-Enclosed-Speaker-2W-6-Ohm-p-2832.html)
 * microSD Card 16GB or less, along with a connector to use the SD card with your computer if you don't have one built-in. **NOTE** - the Wio Terminal only supports SD cards up to 16GB, it does not support higher capacities.
+
+If you purchase the SenseCAP K1100, you will also get more powerful sensor support for the Arduino part.
+
+* [Grove Vision AI Module](https://www.seeedstudio.com/Grove-Vision-AI-Module-p-5457.html): Grove Vision AI Module Sensor is a thumb-sized AI camera with pre-installed ML algorithms for face recognition and people detection and supports customized models by users' definition.
+* [Grove - Wio-E5](https://www.seeedstudio.com/Grove-LoRa-E5-STM32WLE5JC-p-4867.html): Grove Wio-E5 is an easy-to-use wireless radio module, supporting LoRaWAN protocol on the EU868 & US915 frequency and (G)FSK, BPSK, (G)MSK, Long Range modulations.
+  
+They can provide us with more convenient embedded machine learning and wireless IoT applications.
 
 ## Raspberry Pi
 
@@ -97,6 +112,11 @@ The lessons on automated watering work using a relay. As an option, you can conn
 * Silicone pipes
 * Red and black wires
 * Small flat-head screwdriver
+  
+If you have purchased the SenseCAP K1100, then we have sections for the following sensors for IoT applications that are convenient and code free.
+
+* [Grove - Soil Moisture Sensor](https://www.seeedstudio.com/Grove-Moisture-Sensor.html)
+* [Grove - Temperature&Humidity Sensor (SHT40)](https://www.seeedstudio.com/Grove-Temp-Humi-Sensor-SHT40-p-5384.html)
 
 ## Virtual hardware
 
