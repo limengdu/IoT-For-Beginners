@@ -54,6 +54,10 @@ Follow the relevant guide below to add a sensor to your IoT device:
 * [Single-board computer - Raspberry Pi](pi-sensor.md)
 * [Single-board computer - Virtual device](virtual-device-sensor.md)
 
+The SenseCAP K1100 provides the means to obtain sensor values without codes.
+
+* [SenseCAP K1100](sensecap-k1100-sensor.md)
+
 ## Sensor types
 
 Sensors are either analog or digital.
