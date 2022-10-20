@@ -143,6 +143,10 @@ Work through the relevant guide to set your device up and complete a 'Hello Worl
 
 ✅ You will be using VS Code for both Arduino and Single-board computers. If you haven't used this before, read more about it on the [VS Code site](https://code.visualstudio.com?WT.mc_id=academic-17441-jabenn)
 
+And for this particular kit, the SenseCAP K1100, we have written a separate course to guide you through the use of its system. On completion of this course you will have mastered the core logic of the SenseCAP K1100.
+
+* [SenseCAP K1100](sensecap-k1100.md)
+
 ## Applications of IoT
 
 IoT covers a huge range of use cases, across a few broad groups:
