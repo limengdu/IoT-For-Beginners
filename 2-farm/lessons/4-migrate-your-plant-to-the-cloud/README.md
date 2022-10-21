@@ -65,6 +65,36 @@ Azure is the developer cloud from Microsoft, and this is the cloud you will be u
 
 [![Overview of Azure video](../../../images/what-is-azure-video-thumbnail.png)](https://www.microsoft.com/videoplayer/embed/RE4Ibng?WT.mc_id=academic-17441-jabenn)
 
+### Microsoft Azure IoT Hub & Microsoft Azure IoT Central
+
+IoT solutions use a combination of technologies to connect devices, events, and actions through cloud applications. The technologies and services you choose depend on your scenario's development, deployment, and management requirements.
+
+The IoT Central application platform-as-a-service (aPaaS) already provides the integrated Azure components and capabilities that an IoT solution needs. Another option is to combine Azure IoT Hub with other Azure PaaS components to develop your own IoT solutions.
+
+The following table describes how IoT Central or an IoT Hub-based PaaS solution achieve various IoT features and capabilities.
+
+| Feature | IoT Central | IoT Hub-based PaaS |
+|---|---|---|
+| Description | Fully managed aPaaS solution that simplifies device connectivity and management at scale.<br /><br />An aPaaS-based solution is scalable, repeatable, and reliable, with a tradeoff of being less customizable than a PaaS-based solution. | Uses IoT Hub as a central message hub between the IoT application and the devices it manages. Adds more functionality with other Azure PaaS services.<br /><br />This approach is more flexible, but requires greater development and management effort.|
+| Application development | IoT Central is an application platform with support for repeatability of solutions. For more information, see the [IoT Central application administration guide](/azure/iot-central/core/overview-iot-central-admin)<br /><br />[Application templates](/azure/iot-central/core/concepts-app-templates) help kick-start IoT solution development. Use a generic application template, or a prebuilt industry-focused template for [retail](/azure/iot-central/retail/overview-iot-central-retail), [energy](/azure/iot-central/energy/overview-iot-central-energy), [government](/azure/iot-central/government/overview-iot-central-government), or [healthcare](/azure/iot-central/healthcare/overview-iot-central-healthcare). | Design and build your own application solution by using IoT Hub and other PaaS services. |
+| Device template | Device templates help structure device type characteristics and behaviors. Use the templates for supported device management tasks and visualizations. | Define and manage device message templates in a private repository. |
+| Device management | Built-in Azure IoT Device Provisioning Service (DPS) capabilities provide [device integration and device management](/azure/iot-central/core/overview-iot-central#manage-your-devices). | Design and build solutions by using IoT Hub primitives, such as device twin and direct methods. Enable DPS separately. |
+| OPC UA protocol | Not supported. | Use OPC Publisher to bridge the gap between OPC UA–enabled industrial assets and Azure hosted resources by publishing telemetry data to IoT Hub. OPC Publisher supports IEC62541 OPC UA PubSub standard format and other formats. For more information, see [Microsoft OPC Publisher](https://github.com/Azure/iot-edge-opc-publisher). |
+| SigFox and LoRaWAN protocols | Use [Azure IoT Central Device Bridge](https://github.com/Azure/iotc-device-bridge#azure-iot-central-device-bridge). | Create a custom module for Azure IoT Edge, and integrate it through Azure IoT Hub. |
+| Multi-tenancy | [Organizations](/azure/iot-central/core/howto-create-organizations) enable in-app multi-tenancy. You can define a hierarchy to manage which users can see which devices in the IoT Central application. | Achieve multi-tenancy by using separate hubs per customer. You can also build access control into the solution's data layer. |
+| Message retention | IoT Central retains data on a rolling, 30-day basis. | IoT Hub allows data retention in built-in event hubs for a maximum of seven days. |
+| Big data | Manage data from within IoT Central. | Add and manage big data Azure PaaS services. |
+| Data export | Continuously export data by using the [export feature](/azure/iot-central/core/howto-export-to-blob-storage). Export data to Azure blob storage, event hubs, service bus, webhook, and Azure Data Explorer. Filter, enrich, and transform messages on egress. | Use the IoT Hub built-in event hub endpoint, and use message routing to export data to other storage locations. |
+| Analytics | An integrated analytics experience explores device data in the context of device management. | Use separate Azure PaaS services to incorporate analytics, insights, and actions, like Stream Analytics, Azure Data Explorer, and Azure Synapse. |
+| Visualizations | A UX makes it simple to visualize device data, perform analytics queries, and create custom dashboards. | No built-in user interface. |
+| Rules and actions | Use built-in rule and action processing capability with email notification, Azure Monitor group, Power Automate, and webhook actions. For more information, see [Azure IoT Central rules and actions](/azure/iot-central/core/overview-iot-central#rules-and-actions). | Send data from IoT Hub to Azure Stream Analytics or Azure Event Grid. Connect to Azure Logic apps or other custom applications to process rules and actions. For more information, see [IoT remote monitoring and notifications with Azure Logic Apps](/azure/iot-hub/iot-hub-monitoring-notifications-with-azure-logic-apps). |
+| Scalability | Supports autoscaling. For more information about IoT Central scale limits and autoscaling, see [Quotas and limits](/azure/iot-central/core/concepts-quotas-limits).| Deploy solutions to enable IoT Hub autoscaling. For more information, see [Auto-scale your Azure IoT Hub](/samples/azure-samples/iot-hub-dotnet-autoscale/iot-hub-dotnet-autoscale/). |
+| High Availability and Disaster Recovery (HADR)| Manages built-in HADR capabilities automatically. For more information, see [Azure IoT Central scalability and high availability](/azure/iot-central/core/concepts-faq-scalability-availability). | Design your solution to support multiple HADR scenarios. For more information, see [Azure IoT Hub high availability and disaster recovery](/azure/iot-hub/iot-hub-ha-dr). |
+| Service Level Agreement (SLA) | Guarantees 99.9% connectivity. For more information, see [SLA for Azure IoT Central](https://azure.microsoft.com/support/legal/sla/iot-central). | IoT Hub standard and basic tiers guarantee 99.9% uptime. The IoT Hub free tier has no SLA. For more information, see [SLA for Azure IoT Hub](https://azure.microsoft.com/support/legal/sla/iot-hub/v1_2). |
+| Pricing | The first two active devices are free, if their message volume doesn't exceed 800 (Standard Tier 0 plan), 10,000 (Standard Tier 1 plan), or 60,000 (Standard Tier 2 plan) per month. Added device pricing is prorated monthly. IoT Central counts and bills the highest number of active devices each hour. For more information, see [Azure IoT Central pricing](https://azure.microsoft.com/pricing/details/iot-central). | For details about IoT Hub pricing, see [Azure IoT Hub pricing](https://azure.microsoft.com/pricing/details/iot-hub). |
+
+In the main line of this course content, the Azure IoT Hub will be used as the primary usage platform to learn the complete services and processes of IoT. But as a quick start, the SenseCAP K1100 provides a pathway for data to Azure IoT Central.
+
 ## Create a cloud subscription
 
 To use services in the cloud, you will need to sign up for a subscription with a cloud provider. For this lesson, you will be signing up for a Microsoft Azure subscription. If you already have an Azure subscription you can skip this task. The subscription details described here are correct at the time of writing, but may change.
@@ -92,6 +122,14 @@ If you are a student aged 18+, then you can sign up for an Azure for Students su
 If you are not a student, or you don't have a valid school email address, then you can sign up for an Azure Free subscription.
 
 * Sign up for an Azure Free Subscription at [azure.microsoft.com/free](https://azure.microsoft.com/free/?WT.mc_id=academic-17441-jabenn)
+
+### Task - sign up an Azure IoT Central account
+
+Once you have your own account in Azure IoT Hub and have a free cloud subscription, you can log in to [Azure IoT Central](https://apps.azureiotcentral.com/home) to complete your account registration.
+
+![Sign up to Azure IoT Central](../../../images/azure-iot-central-sign-up.png)
+
+Microsoft Azure accounts are universal, once you have logged into Azure's services on your browser, then when logging into Azure IoT Central you will only need to use your already registered Azure account.
 
 ## Cloud IoT services
 
@@ -305,8 +343,9 @@ The IoT device can be registered with your IoT Hub using the Azure CLI.
 
 Work through the relevant guide to connect your IoT device to the cloud:
 
-* [Arduino - Wio Terminal](wio-terminal-connect-hub.md)
-* [Single-board computer - Raspberry Pi/Virtual IoT device](single-board-computer-connect-hub.md)
+* [SenseCAP K1100 to Azure IoT Central](sensecap-k1100-connect-central.md)
+* [Arduino - Wio Terminal to Azure IoT Hub](wio-terminal-connect-hub.md)
+* [Single-board computer - Raspberry Pi/Virtual IoT device to Azure IoT Hub](single-board-computer-connect-hub.md)
 
 ### Task - monitor events
 
