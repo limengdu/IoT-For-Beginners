@@ -466,10 +466,13 @@ Think about how often soil moisture measurements should be sent? How can you cha
 
 ## Review & Self Study
 
-The IoT Hub SDK is open source for both Arduino and Python. In the code repos on GitHub there are a number of samples showing how work with different IoT Hub features.
+1. The IoT Hub SDK is open source for both Arduino and Python. In the code repos on GitHub there are a number of samples showing how work with different IoT Hub features.
 
-* If you are using a Wio Terminal, check out the [Arduino samples on GitHub](https://github.com/Azure/azure-iot-pal-arduino/tree/master/pal/samples)
-* If you are using a Raspberry Pi or Virtual device, check out the [Python samples on GitHub](https://github.com/Azure/azure-iot-sdk-python/tree/master/azure-iot-hub/samples)
+    * If you are using a Wio Terminal, check out the [Arduino samples on GitHub](https://github.com/Azure/azure-iot-pal-arduino/tree/master/pal/samples)
+    * If you are using a Raspberry Pi or Virtual device, check out the [Python samples on GitHub](https://github.com/Azure/azure-iot-sdk-python/tree/master/azure-iot-hub/samples)
+
+2. A powerful tool for the IoT, the SenseCAP K1100 also supports low-power LoRa® network communication. You can easily manage your nodes in an overlay LoRaWAN environment by using the Grove Wio E5 and Wio Terminal to access data to the SenseCAP console in Seeed Studio. 
+    * If you are interested in this, you can continue to learn more about [SenseCAP K1100 and LoRaWAN®](sensecap-k1100-connect-sensecap-console.md).
 
 ## Assignment
 
