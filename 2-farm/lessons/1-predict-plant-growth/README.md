@@ -77,6 +77,7 @@ Temperature sensors can be used with IoT devices to measure ambient temperature.
 Work through the relevant guide to monitor temperatures using your IoT device:
 
 * [Arduino - Wio Terminal](wio-terminal-temp.md)
+* [SenseCAP K1100](sensecap-k1100-temp.md)
 * [Single-board computer - Raspberry Pi](pi-temp.md)
 * [Single-board computer - Virtual device](virtual-device-temp.md)
 
