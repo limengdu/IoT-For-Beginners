@@ -137,6 +137,10 @@ Follow the relevant step below to send telemetry from your device to the MQTT br
 * [Arduino - Wio Terminal](wio-terminal-telemetry.md)
 * [Single-board computer - Raspberry Pi/Virtual IoT device](single-board-computer-telemetry.md)
 
+We can also do all this with the SenseCAP K1100, which sends data messages to IoT platforms without the use of code. So here we will start by bringing you how to configure the Wio Terminal for inbound networking.
+
+* [SenseCAP K1100](sensecap-k1100-wifi.md)
+
 ### Receive telemetry from the MQTT broker
 
 There's no point in sending telemetry if there's nothing on the other end to listen for it. The light level telemetry needs something listening to it to process the data. This 'server' code is the kind of code you will deploy to a cloud service as part of a larger IoT application, but here you are going to run this code locally on your computer (or on your Pi if you are coding directly on there). The server code consists of a Python app that listens to telemetry messages over MQTT with light levels. Later in this lesson you will make it reply with a command message with instructions to turn the LED on or off.
@@ -339,6 +343,8 @@ One important consideration with telemetry is how often to measure and send the 
 For a thermostat, measuring every few minutes is probably more than enough as temperatures don't change that often. If you only measure once a day then you could end up heating your house for nighttime temperatures in the middle of a sunny day, whereas if you measure every second you will have thousands of unnecessarily duplicated temperature measurements that will eat into the users' Internet speed and bandwidth (a problem for people with limited bandwidth plans), use more power which can be a problem for battery powered devices like remote sensors, and increase the cost of the providers cloud computing resources processing and storing them.
 
 If you are monitoring data around a piece of machinery in a factory that if it fails could cause catastrophic damage and millions of dollars in lost revenue, then measuring multiple times a second might be necessary. It's better to waste bandwidth than miss telemetry that indicates that a machine needs to be stopped and fixed before it breaks.
+
+For the SenseCAP K1100, reliable and real-time data is a must, so it is set to send telemetry at 2-minute intervals.
 
 > 💁 In this situation, you might consider having an edge device to process the telemetry first to reduce reliance on the Internet.
 
