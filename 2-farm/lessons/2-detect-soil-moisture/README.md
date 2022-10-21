@@ -201,6 +201,7 @@ You can measure the moisture level in soil using a soil moisture sensor, an IoT 
 Work through the relevant guide to measure soil moisture using your IoT device:
 
 * [Arduino - Wio Terminal](wio-terminal-soil-moisture.md)
+* [SenseCAP K1100](sensecap-k1100-soil-moisture.md)
 * [Single-board computer - Raspberry Pi](pi-soil-moisture.md)
 * [Single-board computer - Virtual device](virtual-device-soil-moisture.md)
 
