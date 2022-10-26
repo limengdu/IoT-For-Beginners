@@ -197,45 +197,6 @@ If you want to connect to the SenseCAP Portal via the SenseCAP K1100, you will n
     ![SenseCAP Data](../../../images/sensecap_data.png)
 
 ## Upgrade to industrial grade SenseCAP devices
-
-<style>
-td, th {
-   border: none!important;
-}
-
-.item a {
-    text-decoration: none;
-    display: inline-block;
-    /* border: 1px solid #CCC; */
-    /* font-size: 15px; */
-}
-
-.item ul{
-    list-style-type: none;
-    width: 100%;
-}
-
-.item {
-    margin-left: 0;
-}
-
-.item ul li {
-    display: inline-block;
-}
-
-.headline::before{
-    content: '';
-    border-top: 6px solid transparent;
-    border-right: 6px solid #7cb342;
-    position: relative;
-    left: -2px;
-}
-.partner{
-
-}
-
-</style>
-
 With the SenseCAP [S2110 controller](https://www.seeedstudio.com/SenseCAP-XIAO-LoRaWAN-Controller-p-5474.html) and [S2100 data logger](https://www.seeedstudio.com/SenseCAP-S2100-LoRaWAN-Data-Logger-p-5361.html), you can easily turn the Grove into a LoRaWAN® sensor. Seeed not only helps you with prototyping but also offers you the possibility to expand your project with the SenseCAP series of robust [industrial sensors](https://www.seeedstudio.com/catalogsearch/result/?q=sensecap&categories=SenseCAP&application=Temperature%2FHumidity~Soil~Gas~Light~Weather~Water~Automation~Positioning~Machine%20Learning~Voice%20Recognition&compatibility=SenseCAP).
 
 The IP66 housing, Bluetooth configuration, compatibility with the global LoRaWAN® network, built-in 19 Ah battery, and powerful support from APP make the [SenseCAP S210x](https://www.seeedstudio.com/catalogsearch/result/?q=S21&categories=SenseCAP~LoRaWAN%20Device&product_module=Device) the best choice for industrial applications. The series includes sensors for soil moisture, air temperature and humidity, light intensity, CO2, EC, and an 8-in-1 weather station. Try the latest SenseCAP S210x for your next successful industrial project.
