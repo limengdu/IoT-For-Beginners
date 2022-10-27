@@ -76,6 +76,17 @@ The ML model used to detect images like this is called an *image classifier* - i
 
 > 💁 This is an over-simplification, and there are many other ways to train models that don't always need labelled outputs, such as unsupervised learning. If you want to learn more about ML, check out [ML for beginners, a 24 lesson curriculum on Machine Learning](https://aka.ms/ML-beginners).
 
+## Real-time screen recognition
+
+If you have the SenseCAP K1100 to hand, you can use the human models built into the Grove Vision AI in the kit to achieve real-time recognition of the picture in a codeless way.
+
+### Task - run real-time screen recognition
+
+Human body recognition via Grove Vision AI's live camera feed.
+
+* [SenseCAP - K1100](sensecap-k1100--real-time-screen-recognition.md)
+
+
 ## Train an image classifier
 
 To successfully train an image classifier you need millions of images. As it turns out, once you have an image classifier trained on millions or billions of assorted images, you can re-use it and re-train it using a small set of images and get great results, using a process called *transfer learning*.
@@ -91,6 +102,14 @@ You can think of this as a bit like children's shape books, where once you can r
 There are a wide range of tools that can help you do this, including cloud-based services that can help you train your model, then use it via web APIs.
 
 > 💁 Training these models takes a lot of computer power, usually via Graphics Processing Units, or GPUs. The same specialized hardware that makes games on your Xbox look amazing can also be used to train machine learning models. By using the cloud you can rent time on powerful computers with GPUs to train these models, getting access to the computing power you need, just for the time you need it.
+
+## Train a fruit model
+
+We will use the Grove Vision AI in the SenseCAP K1100 suite as an example and explain how to train an apple model for it.
+
+### Task - Train a fruit model
+
+* [SenseCAP - K1100](sensecap-k1100-train-a-fruit-model.md)
 
 ## Custom Vision
 
